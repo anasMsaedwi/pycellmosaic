@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pycellmosaic"
+version = "0.1.0"
+description = "PyCellMosaic - Python mosaic views for multi-omics single-cell data: Reconstruct rich, integrated visualizations of cellular layers."
+readme = "README.md"
+authors = [{ name = "Anas M. Saedwi" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "anndata",
+    "mudata",
+    "scanpy",
+    "muon",
+    "pandas",
+    "numpy<2.0",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "leidenalg",
+    "python-igraph",
+    "typer[all]",
+    "jinja2",
+    "pooch",
+    "pytest"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/username/pycellmosaic"
+Repository = "https://github.com/username/pycellmosaic"
+
+[project.scripts]
+pycellmosaic = "pycellmosaic.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pycellmosaic"]
