@@ -9,8 +9,8 @@ with open("requirements.txt", "r", encoding="utf-8") as f:
 setup(
     name="pycellmosaic",
     version="0.1.0",
-    author="Anas Saedwi",
-    author_email="author@example.com",
+    author="Anas M. Saedwi",
+    author_email="anasmsaedwi@gmail.com",
     description="Mosaic views for multi-omics single-cell data",
     long_description=long_description,
     long_description_content_type="text/markdown",
